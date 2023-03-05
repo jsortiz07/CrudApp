@@ -8,6 +8,6 @@ public interface IPersonaService {
 	
 	public List<Persona> listar();
 	public Optional<Persona>listarId(int id);
-	public String save(Persona p);
+	public int save(Persona p);
 	public void delete(int id);
 }
