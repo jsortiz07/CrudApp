@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.johanapp.demo.interfaceService.IPersonaService;
 import com.johanapp.demo.interfaces.IPersona;
 import com.johanapp.demo.modelo.Persona;
 
+@Service
 public class PersonaService implements IPersonaService {
 
 	@Autowired
@@ -28,8 +30,8 @@ public class PersonaService implements IPersonaService {
 
 	@Override
 	public String save(Persona p) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return "guardar";
 	}
 
 	@Override
