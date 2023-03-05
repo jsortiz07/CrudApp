@@ -25,7 +25,7 @@ public class PersonaService implements IPersonaService {
 	@Override
 	public Optional<Persona> listarId(int id) {
 		// TODO Auto-generated method stub
-		return Optional.empty();
+		return data.findById(id);
 	}
 
 	@Override
